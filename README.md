@@ -1,8 +1,13 @@
 # claw_service
 与openclaw通信的微服务
 
-## openclaw网关拉起命令
- openclaw gateway --verbose --ws-log compact
+# openclaw
+
+## 网关拉起命令
+openclaw gateway --verbose --ws-log compact
+
+## 网页客户端url查看命令
+openclaw dashboard --no-open
 
 ## 环境配置
 
