@@ -55,6 +55,10 @@ def register_routers(app: FastAPI) -> None:
     from routers.health.interface import router as demo_router
     app.include_router(demo_router, prefix=f"{api_base}/health", tags=["health"])
 
+    # skills 路由（测试服务响应）
+    from routers.openclaw.interface import router as skills_router
+    app.include_router(skills_router, prefix=f"{api_base}/openclaw", tags=["openclaw"])
+
 
 # 实例化应用并注册路由
 setup_logging()
